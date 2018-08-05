@@ -3,5 +3,5 @@
 Service in progress...
 
 ## Todo:
-- Make tests
+- Make tests?
 - Migrate to aws lambda
