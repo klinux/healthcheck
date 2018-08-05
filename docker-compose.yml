@@ -1,0 +1,22 @@
+version: '3'
+services:
+  api:
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    environment:
+      MONGO_URL: mongo
+    restart: always
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    ports:
+      - 27017
+    volumes:
+      - ./.docker/mgo:/data/db
+    restart: always
+    healthcheck:
+      test: "exit 0"
