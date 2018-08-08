@@ -1,6 +1,6 @@
 # Healthcheck service
 
-Service in progress...
+Work in progress...
 
 ## Todo:
 - Make tests?
